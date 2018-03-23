@@ -1,0 +1,135 @@
+*
+  // border: 1px solid #000
+  font-family: 微軟正黑體
+  position: relative
+  
+.wrapper
+  overflow: hidden
+  
+.main-bg
+  background: linear-gradient(50deg,#ff4162 0%,#7c26f8 100%)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+
+.element
+  border: 1px solid #fff
+  background-color: rgba(0,0,0,0.5)
+  border-radius: 10px
+  font-size: 20px
+  padding: 10px
+  color: #fff
+  box-sizing: border-box
+
+.givePadding
+  padding-top: 60px
+  padding-bottom: 100px
+
+/* navbar */
+.navbar
+  background-color: rgba(0,0,0,0.6)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 50
+
+.navbar .element
+  height: 50px
+
+@media (min-width: 768px)
+  .navbar .element
+    height: 80px
+
+/* jumbotron */
+.jumbotron
+  border: 1px solid #ffffff
+  padding-top: 84px
+  padding-bottom: 70px
+  min-height: 75vh
+
+.jumbotron .element
+  height: 300px
+
+
+/* whatson */
+.whatson
+  background-color: #fff
+
+.whatson .album-art
+  float: left
+  width: 50%
+
+@media (min-width: 768px)
+  .whatson .album-art
+    width: 100%
+
+@media (min-width: 992px)
+  .whatson .album-art
+    width: 50%
+
+.whatson .album-art .element
+  padding-top: 100%
+
+@media (min-width: 768px) and (max-width: 991px)
+  .hidden-sm
+    display: none
+
+/* albums */
+.albums .phone-group
+  transform: rotate(30deg)
+  width: 597px
+  left: -40px
+  margin-bottom: -400px //後面內容會蓋住
+
+@media (min-width: 768px)
+  .albums .phone-group
+    position: absolute
+    left: 100px
+    top: -300px
+    width: 1134px
+
+.albums .phone
+  width: 179px
+  height: 365px
+  border: 5px solid #7c25f8
+  background-color: #fff
+  border-radius: 20px
+  margin-bottom: 30px
+
+@media (min-width: 768px)
+  .albums .phone
+    width: 358px
+    height: 730px
+    border-radius: 40px
+    
+
+.albums .phone1, .phone4
+  margin-top: 200px
+
+/* devices */
+.devices
+  background-color: #222326
+.devices .element
+  height: 300px
+
+/* subscribtion */
+.subscribtion .element
+  height: 800px
+
+/* footer */  
+.footer
+  background-color: #000000
+  padding-top: 80px
+  padding-bottom: 50px
+
+.footer .element
+  height: 300px
+
+.footer .row-small
+  margin-top: 100px
+  .element
+    height: 40px
